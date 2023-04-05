@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualization Of Sorting Algorithms</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+    <h1 align="center">Visualization Of Sorting Algorithms</h1>
+    <nav>
+        <div class="row">
+
+            <div class="col gap-2 d-sm-flex" id="newArray">
+                <button type="button" class="btn btn-outline-success btn-dark newArray">New Array</button>
+            </div>
+            <div class="col" id="input">
+                <span id="size">Size<input id="arr_size" type="range" min="5" max="100" step=1 value="50"></span>
+
+                <span id="speed">Speed<input id="speed_input" type="range" min="20" max="300" stepDown="10" value="60"></span>
+            </div>
+            <div class="col gap-2 d-sm-flex justify-content-end">
+                <button type="button" class="btn btn-outline-success btn-dark BubbleSort">Bubble Sort</button>
+                <button type="button" class="btn btn-outline-success btn-dark SelectionSort">Selection Sort</button>
+                <button type="button" class="btn btn-outline-success btn-dark InsertionSort">Insertion Sort</button>
+                <button type="button" class="btn btn-outline-success btn-dark MergeSort">Merge Sort</button>
+                <button type="button" class="btn btn-outline-success btn-dark QuickSort">Quick Sort</button>
+            </div>
+        </div>
+    </nav>
+</header>
+<body class="p-3 mb-2 bg-dark text-white">
+
+    <div id="bars" class="flex-container"></div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="JS_Files/sorting.js"></script>
+    <script src="JS_Files/bubble.js"></script>
+    <script src="JS_Files/insertion.js"></script>
+    <script src="JS_Files/merge.js"></script>
+    <script src="JS_Files/quick.js"></script>
+    <script src="JS_Files/selection.js"></script>
+</body>
+</html>
